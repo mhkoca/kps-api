@@ -11,14 +11,14 @@ const port = 443;
 
 const address = 'https://tckimlik.nvi.gov.tr/service/kpspublic.asmx?WSDL';
 
-app.get('/tckn-sorgu', (req, res) => {
-    console.log(req.query)
+app.post('/tckn-sorgu', (req, res) => {
+    console.log(req.body)
 
     let params = {
-        TCKimlikNo: req.query.tckn,
-        Ad: req.query.ad,
-        Soyad: req.query.soyad,
-        DogumYili: req.query.dogumyili
+        TCKimlikNo: req.body.tckn,
+        Ad: req.body.ad,
+        Soyad: req.body.soyad,
+        DogumYili: req.body.dogumyili
     };
 
     soap.createClient(address, (err, client) => {
