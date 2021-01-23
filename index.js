@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-const port = 1923;
+const port = 443;
 
 const address = 'https://tckimlik.nvi.gov.tr/service/kpspublic.asmx?WSDL';
 
