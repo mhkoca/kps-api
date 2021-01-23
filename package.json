@@ -1,0 +1,31 @@
+{
+  "name": "kps-api",
+  "version": "1.0.0",
+  "description": "TCKN sorgulama soap servisini kullanmak için bir API",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "soap": "^0.36.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhkoca/kps-api.git"
+  },
+  "keywords": [
+    "kps",
+    "tckn",
+    "sorgu"
+  ],
+  "author": "muhammed hilmi koca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhkoca/kps-api/issues"
+  },
+  "homepage": "https://github.com/mhkoca/kps-api#readme"
+}
