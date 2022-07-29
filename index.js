@@ -21,11 +21,12 @@ app.post('/tckn-sorgu', (req, res) => {
     tcknSorgu.tcknSorgula(params)
         .then(function (data) {
             var result = {
-                result: data
+                result: data,
+                success: true
             }
             res.send(result);
         }).catch(function (msg) {
-            res.send(msg)
+            res.status(500).json({success: false, error: msg});
         });
 })
 

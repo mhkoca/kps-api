@@ -22,7 +22,8 @@ Aşağıdaki gibi bir cevap dönüyorum:
 
 ```js
 {
-    "result": true
+    "result": true, 
+    "success": true
 }
 ```
 
