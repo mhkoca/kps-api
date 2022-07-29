@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-const port = 6060;
+const port = 443;
 
 app.post('/tckn-sorgu', (req, res) => {
 
@@ -20,7 +20,10 @@ app.post('/tckn-sorgu', (req, res) => {
 
     tcknSorgu.tcknSorgula(params)
         .then(function (data) {
-            res.send(data);
+            var result = {
+                result: data
+            }
+            res.send(result);
         }).catch(function (msg) {
             res.send(msg)
         });
