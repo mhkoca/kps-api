@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-const port = 6060;
+const port = 443;
 
 app.post('/tckn-sorgu', (req, res) => {
 
